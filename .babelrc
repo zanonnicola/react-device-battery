@@ -5,7 +5,6 @@
         "plugins": [
           ["transform-react-remove-prop-types", {
             "mode": "unsafe-wrap",
-            "removeImport": true,
             "ignoreFilenames": ["node_modules"]
           }]
         ]
