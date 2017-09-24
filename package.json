@@ -41,5 +41,6 @@
   "bugs": {
     "url": "https://github.com/zanonnicola/react-device-battery/issues"
   },
-  "homepage": "https://github.com/zanonnicola/react-device-battery#readme"
+  "homepage": "https://github.com/zanonnicola/react-device-battery#readme",
+  "dependencies": {}
 }
