@@ -15,14 +15,14 @@ class Battery extends Component {
     return false;
   }
   render() {
-    console.log('MyComponent');
     return this.props.render(this.state);
   }
 }
-
-Battery.defaultProps = {
-  render: () => null,
-  onChange: () => {}
-};
+if (process.env.NODE_ENV !== "production") {
+  Battery.defaultProps = {
+    render: () => null,
+    onChange: () => {}
+  };
+}
 
 export default Battery;
