@@ -1,10 +1,11 @@
 {
   "name": "react-device-battery",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Get battery status",
-  "main": "lib/react-device-battery.js",
-  "module": "lib/react-device-battery.js",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
   "peerDependencies": {
+    "prop-types": "^15.5.10",
     "react": "15.x || ^16.0.0-rc"
   },
   "scripts": {
@@ -33,7 +34,6 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "webpack": "^2.6.1"
   },
