@@ -1,0 +1,44 @@
+{
+  "name": "react-device-battery",
+  "version": "0.0.1",
+  "description": "Get battery status",
+  "main": "build/index.js",
+  "peerDependencies": {
+    "react": "^15.5.4"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "webpack": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zanonnicola/react-device-battery.git"
+  },
+  "keywords": [
+    "react-component",
+    "Battery",
+    "javascript"
+  ],
+  "author": "Nicola Zanon <nicola.zanon86@gmail.com> (https://nicola-zanon.com/)",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.8",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zanonnicola/react-device-battery/issues"
+  },
+  "homepage": "https://github.com/zanonnicola/react-device-battery#readme"
+}
