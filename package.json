@@ -6,15 +6,11 @@
   "peerDependencies": {
     "react": "15.x || ^16.0.0-rc"
   },
-  "dependencies": {
-    "prop-types": "^15.5.10",
-    "react": "^15.5.4",
-    "webpack": "^2.6.1"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch",
-    "build": "webpack"
+    "build": "webpack",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -35,7 +31,10 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.8",
     "babel-preset-env": "^1.6.0",
     "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1"
+    "babel-preset-react": "^6.24.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "webpack": "^2.6.1"
   },
   "license": "MIT",
   "bugs": {
