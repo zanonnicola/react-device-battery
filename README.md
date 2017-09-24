@@ -1,5 +1,7 @@
 # React Device Battery
 
+> 👀 In development
+
 Notifies your React app of the device battery status
 
 Installation
