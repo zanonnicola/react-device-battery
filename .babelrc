@@ -4,7 +4,8 @@
       "production": {
         "plugins": [
           ["transform-react-remove-prop-types", {
-            "mode": "wrap",
+            "mode": "unsafe-wrap",
+            "removeImport": true,
             "ignoreFilenames": ["node_modules"]
           }]
         ]

@@ -25,8 +25,7 @@ module.exports = {
       commonjs2: 'react',
       commonjs: 'react',
       amd: 'react'
-    },
-    'prop-types': 'PropTypes'
+    }
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
