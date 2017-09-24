@@ -2,11 +2,12 @@
   "name": "react-device-battery",
   "version": "0.0.1",
   "description": "Get battery status",
-  "main": "build/index.js",
+  "main": "lib/index.js",
   "peerDependencies": {
-    "react": "^15.5.4"
+    "react": "15.x || ^16.0.0-rc"
   },
   "dependencies": {
+    "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "webpack": "^2.6.1"
   },
