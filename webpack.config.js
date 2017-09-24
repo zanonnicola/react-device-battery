@@ -5,7 +5,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'lib'),
     filename: 'index.js',
-    libraryTarget: 'commonjs2'
+    library: 'reactDeviceBattery',
+    libraryTarget: 'umd'
   },
   devtool: "source-map",
   module: {
@@ -19,7 +20,13 @@ module.exports = {
     ]
   },
   externals: {
-    'react': 'commonjs react' // this line is just to use the React dependency of our parent-testing-project instead of using our own React.
+    'react': {
+      root: 'React',
+      commonjs2: 'react',
+      commonjs: 'react',
+      amd: 'react'
+    },
+    'prop-types': 'PropTypes'
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({

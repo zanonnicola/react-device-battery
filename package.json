@@ -2,14 +2,15 @@
   "name": "react-device-battery",
   "version": "0.0.2",
   "description": "Get battery status",
-  "main": "lib/index.js",
+  "main": "lib/react-device-battery.js",
+  "module": "lib/react-device-battery.js",
   "peerDependencies": {
     "react": "15.x || ^16.0.0-rc"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch",
-    "build": "webpack",
+    "build": "NODE_ENV=production webpack --config webpack.config.js",
     "prepublish": "npm run build"
   },
   "repository": {
