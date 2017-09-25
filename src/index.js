@@ -7,6 +7,7 @@ class Battery extends Component {
     this.state = {
       battery: null
     };
+    this.handleChange = this.handleChange.bind(this);
   }
   isBatteryStatusAPISupported() {
     if (navigator.getBattery || navigator.battery || navigator.mozBattery) {
