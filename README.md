@@ -46,7 +46,7 @@ Let's assume you want to check if you have enough battery before doing somenthin
 ```javascript
 const App = () => (
   <div>
-    <h2>Magic is happening {'\u2728'}</h2>
+    <h2>Magic is happening ⚡️</h2>
     <Battery 
       onChange={(battery ) => {
         console.log(battery)
