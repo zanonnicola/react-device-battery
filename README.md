@@ -1,4 +1,4 @@
-# React Device Battery
+# 🔋 React Device Battery
 
 > 👀 In development
 
