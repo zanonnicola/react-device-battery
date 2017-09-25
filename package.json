@@ -1,6 +1,6 @@
 {
   "name": "react-device-battery",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Get battery status",
   "main": "lib/index.js",
   "module": "lib/index.js",

@@ -63,6 +63,45 @@ render(<App />, document.getElementById('root'));
 
 > If not supported the render function return `null`
 
+## Props
+
+#### `render` [required]
+Default: `null`
+
+Whatever you'd like to render in response to changes in the battery level
+
+```javascript
+<Battery 
+  render={({ battery }) =>
+    <p>Battery Level: {battery ? battery : <span>Not Supported</span>}.</p>
+  } 
+/>
+```
+
+#### `onChange` [optional]
+Default: `undefined`
+
+Called whenever the batter level changes
+
+```javascript
+handleBatteryChange = ({ battery }) => {
+  if (battery <= 10) {
+    this.saveMyData(); // Oh my...
+  }
+}
+
+<Battery 
+  onChange={this.handleBatteryChange}
+  render={({ battery }) =>
+    <p>Battery Level: {battery ? battery : <span>Not Supported</span>}.</p>
+  } 
+/>
+```
+
 ## Component info
 
 This component has been built using `React Render Callback` pattern. Basically it is a way for the parent to provide some logic to the child, and the child have the control on how to execute that logic.
+
+## Legal
+
+Released under MIT license.
