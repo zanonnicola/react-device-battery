@@ -7,6 +7,7 @@ class Battery extends Component {
     this.state = {
       battery: null
     };
+    this.handleChange = this.handleChange.bind(this);
   }
   isBatteryStatusAPISupported() {
     if (navigator.getBattery || navigator.battery || navigator.mozBattery) {
@@ -24,7 +25,7 @@ class Battery extends Component {
   getBatteryLevel(battery) {
     return parseFloat((battery.level * 100).toFixed(2));
   }
-  handleChange = () => {
+  handleChange() {
     this.setBatteryState();
   }
   componentDidMount() {
