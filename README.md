@@ -4,21 +4,24 @@
 
 Notifies your React app of the device battery status
 
-Installation
-------------
+This component is based on the [Battery Status API](https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API)
+
+__The Battery Status API, more often referred to as the Battery API, provides information about the system's battery charge level and lets you be notified by events that are sent when the battery level or charging status change.__
+
+## :package: Installation
 
 ```bash
 npm install react-device-battery
 ```
 
-And then import it:
+## :rocket: Load
 
 ```js
 // using es modules
 import Battery from 'react-device-battery'
 
 // common.js
-const Battery = require('react-device-battery').default
+const Battery = require('react-device-battery')
 
 // AMD
 
@@ -33,5 +36,33 @@ Or use script tags and globals.
 And then grab it off the global like so:
 
 ```js
-const Battery = reactDeviceBattery.default
+const Battery = reactDeviceBattery
 ```
+
+## :bulb: Usage
+
+Let's assume you want to check if you have enough battery before doing somenthing or you want to render based on how much battery I got left:
+
+```javascript
+const App = () => (
+  <div>
+    <h2>Magic is happening {'\u2728'}</h2>
+    <Battery 
+      onChange={(battery ) => {
+        console.log(battery)
+      }}
+      render={({ battery }) =>
+        <p>Battery Level: {battery ? battery : <span>Not Supported</span>}.</p>
+      } 
+    />
+  </div>
+);
+
+render(<App />, document.getElementById('root'));
+```
+
+> If not supported the render function return `null`
+
+## Component info
+
+This compoent has been built using `React Render Callback` pattern. Basically it is a way for the parent to provide some logic to the child, and the child have the control on how to execute that logic.
