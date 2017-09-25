@@ -41,7 +41,7 @@ const Battery = reactDeviceBattery
 
 ## :bulb: Usage
 
-Let's assume you want to check if you have enough battery before doing somenthing or you want to render based on how much battery I got left:
+Let's assume you want to check if you have enough battery before doing somenthing or you want to render based on how much battery you got left:
 
 ```javascript
 const App = () => (
@@ -65,4 +65,4 @@ render(<App />, document.getElementById('root'));
 
 ## Component info
 
-This compoent has been built using `React Render Callback` pattern. Basically it is a way for the parent to provide some logic to the child, and the child have the control on how to execute that logic.
+This component has been built using `React Render Callback` pattern. Basically it is a way for the parent to provide some logic to the child, and the child have the control on how to execute that logic.
