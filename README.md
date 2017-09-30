@@ -65,7 +65,7 @@ const App = () => (
 render(<App />, document.getElementById('root'));
 ```
 
-> If not supported the render function return `null`
+> If the Battery API is not supported, the render function is passed `null`.
 
 ## Props
 
