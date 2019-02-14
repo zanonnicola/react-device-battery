@@ -22,8 +22,8 @@ class Battery extends Component {
       this.setState({ battery: percentage });
     });
   }
-  getBatteryLevel(battery) {
-    return parseFloat((battery.level * 100).toFixed(2));
+  getBatteryLevel({level}) {
+    return parseFloat((level * 100).toFixed(2));
   }
   handleChange() {
     this.setBatteryState();
